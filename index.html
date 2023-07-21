@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoot Fast</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+    <!-- ---------------------PANTALLA DE INICIO------------------ -->
+    <div id="splash-screen" class="container">
+    <img src="./images/logo-juego.png" width="500" alt="logo-titulo">  
+    <button id="start-btn">Jugar!</button>
+    <button id="config-btn">Configuracion</button>
+    <div class="container">
+        <p><aside>TUTORIAL</aside>aqui escribire en que consiste el juego con su objetivo y addons, como se configura y como se resetea </p>
+        <p>Desarrollado por: Sergio Vidal Garcia</p>
+    </div>
+    </div>
+    <!-- ---------------------PANTALLA DE JUEGO------------------ -->
+    <div id="game-screen" class="container">
+
+            <div id="game-box">
+
+            <div class="score">Score</div>
+            <div class="time-out">Contador tiempo</div>
+            <div class="punto-de-mira"><img src="./images/punto-mira.png" alt="Punto de mira"></div>
+
+            </div>
+          
+
+    </div>
+    <!-- ---------------------PANTALLA DE fin/reset------------------ -->
+    <div id="end-screen"></div>
+    <!-- ---------------------SCRIPTS------------------ -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

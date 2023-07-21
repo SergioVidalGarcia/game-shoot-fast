@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: aqua;
+  }
+  
+  #config-btn   {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 10px; 
+  }
+
+  #start-btn {
+    background-color: red;
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    margin-top: 40px;
+    border-radius: 30px; 
+    
+  }
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  #game-box {
+    
+    width:800px;
+    height:700px;
+    overflow: hidden; 
+    position: relative; 
+    user-select: none; 
+    background-image: url("../images/fondo-gamebox.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+  
+  }
+
+  #game-screen, #gameover-screen {
+    display: none;
+  }
+
+
+  
+
+  #time-out{
+
+
+  }
+
+  .punto-de-mira{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: transparent;
+    overflow: hidden; 
+    position: relative; 
+    user-select: none;
+    height: 70px;
+  }
+
+
+  .score {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px;
+
+    background-color: transparent;
+    color: red;
+    padding: 40px;
+    font-size: 30px;
+  }
+
+  .time-out {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px;
+
+    background-color: transparent;
+    color: yellow;
+    padding-top: 0px;
+    padding-right: 40px;
+    font-size: 40px;
+    margin-top: px;
+  }
