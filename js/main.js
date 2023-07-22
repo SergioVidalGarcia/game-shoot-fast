@@ -12,6 +12,9 @@ function startGame() {
   console.log("iniciando el juego");
   splashScreenNode.style.display = "none";
   gameScreenNode.style.display = "flex";
+  moverImagen();
+  countdown();
+  
 }
 
 function cfgMenu() {
@@ -19,6 +22,8 @@ function cfgMenu() {
   splashScreenNode.style.display = "none";
   
 }
+
+
 
 //ADD EVENT LISTENERS
 

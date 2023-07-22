@@ -4,6 +4,7 @@ body {
   margin: 0;
   background-image: url(../images/fondo-dron.jpg);
   background-position: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #config-btn {
@@ -51,6 +52,7 @@ body {
   background-image: url("../images/fondo-gamebox.png");
   background-position: center;
   background-size: cover;
+  cursor:none;
 }
 
 #game-screen,
@@ -59,12 +61,15 @@ body {
 }
 
 .punto-de-mira {
+  
   display: flex;
-  justify-content: center;
-  margin: 0px;
+  position: absolute;
+  margin-left: -34px;
+  margin-top: -35px;
+  
   background-color: transparent;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   user-select: none;
   height: 70px;
 }
