@@ -6,6 +6,7 @@ const splashScreenNode = document.querySelector("#splash-screen");
 const gameScreenNode = document.querySelector("#game-screen");
 const endScreenNode = document.querySelector("#end-screen");
 
+
 //STATE MANAGENT FUNCTIONS
 function startGame() {
   console.log("iniciando el juego");
@@ -15,6 +16,8 @@ function startGame() {
 
 function cfgMenu() {
   console.log("Entrando a configuracion");
+  splashScreenNode.style.display = "none";
+  
 }
 
 //ADD EVENT LISTENERS

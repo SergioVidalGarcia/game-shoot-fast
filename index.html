@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shoot Fast</title>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body ondragstart="return false;" ondrop="return false;">
-    <!-- ---------------------PANTALLA DE INICIO------------------ -->
-    <div id="splash-screen" class="container">
-    <img src="./images/logo-juego.png" width="500" alt="logo-titulo">  
-    <button id="start-btn">Jugar!</button>
-    <button id="config-btn">Configuracion</button>
-    <div class="container">
-        <p><aside>TUTORIAL</aside>aqui escribire en que consiste el juego con su objetivo y addons, como se configura y como se resetea </p>
-        <p>Desarrollado por: Sergio Vidal Garcia</p>
-    </div>
-    </div>
-    <!-- ---------------------PANTALLA DE JUEGO------------------ -->
-    <div id="game-screen" class="container">
 
-            <div id="game-box">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoot Fast</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-            <div class="score">Score</div>
-            <div class="time-out">Contador tiempo</div>
-            <div class="punto-de-mira"><img src="./images/punto-mira.png" alt="Punto de mira"></div>
-
-            </div>
-          
+<body ondragstart="return false;" ondrop="return false;">
+  <!-- ---------------------PANTALLA DE INICIO------------------ -->
+  <div id="splash-screen" class="container">
+    <img src="./images/logo-juego.png" width="500" alt="logo-titulo">
+    <div class="instrucciones">
+      <p>
+      <aside>INSTRUCCIONES DE JUEGO</aside>
+      <hr>Este es un juego en el que tendrás que <strong>disparar objetivos que apareceran por la pantalla.<br></strong>
+      Tendrás que hacer <strong>"Click izq" de tu raton para eliminar a los objetivos</strong>, estos se sumaran a un
+      score.<br> ¡<strong>Tienes 1 minuto de tiempo para eliminar la maxima cantidad de objetivos</strong>! ¡<strong>Si
+        fallas objetivos los enemigos se acumularan</strong> y un indicador subira en funcion a tus fallos, baja este
+      indicador acertando varios objetivos seguidos! Tendras 3 resultados al finalizar el juego...<br> Intenta conseguir
+      <strong>mas de 100 de score para ser el mejor</strong></p>
+      <hr>
 
     </div>
+
+
+    <div class="botones-inicio">
+
+      <button id="start-btn">¡Jugar!</button>
+      <button id="config-btn">Configuracion</button>
+
+    </div>
+    <div>
+      <p class="desarrollo">&reg WEB-DEV: Sergio Vidal Garcia</p>
+    </div>
+  </div>
+
+  <!-- ---------------------PANTALLA DE JUEGO------------------ -->
+  <div id="game-screen" class="container">
+
+    <div id="game-box">
+      <div class="score">Score</div>
+      <div class="time-out">Contador tiempo</div>
+      <div class="punto-de-mira"><img src="./images/punto-mira.png" alt="Punto de mira"></div>
+    </div>
+    
+
+
+
     <!-- ---------------------PANTALLA DE fin/reset------------------ -->
     <div id="end-screen"></div>
     <!-- ---------------------SCRIPTS------------------ -->
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>

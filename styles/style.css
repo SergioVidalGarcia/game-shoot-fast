@@ -1,97 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Lora&family=VT323&display=swap');
+
 body {
-    margin: 0;
-    background-color: aqua;
-  }
+  margin: 0;
+  background-image: url(../images/fondo-dron.jpg);
+  background-position: center;
+}
+
+#config-btn {
+  background-color: #FCF2E0;
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border-width: 7px;
+  font-size: 40px;
+  font-family: 'VT323', monospace;
+}
+
+#start-btn {
+  background-color: orange;
+  color: white;
+  padding: 40px;
+  font-size: 40px;
+  margin-top: 15px;
+  border-radius: 30px;
+  border-width: 7px;
+  font-family: 'VT323', monospace;
+  font-size: 60px;
+
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+
+
+#game-box {
   
-  #config-btn   {
-    background-color: green;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
-    margin-top: 40px;
-    border-radius: 10px; 
-  }
+  width: 900px;
+  height: 700px;
+  overflow: hidden;
+  user-select: none;
+  background-image: url("../images/fondo-gamebox.png");
+  background-position: center;
+  background-size: cover;
+}
 
-  #start-btn {
-    background-color: red;
-    color: white;
-    padding: 40px;
-    font-size: 40px;
-    margin-top: 40px;
-    border-radius: 30px; 
-    
-  }
+#game-screen,
+#gameover-screen {
+  display: none;
+}
 
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-  }
-  
-  #game-box {
-    
-    width:800px;
-    height:700px;
-    overflow: hidden; 
-    position: relative; 
-    user-select: none; 
-    background-image: url("../images/fondo-gamebox.png");
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-
-  
-  }
-
-  #game-screen, #gameover-screen {
-    display: none;
-  }
+.punto-de-mira {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  height: 70px;
+}
 
 
-  
+.score {
+  display: flex;
+  justify-content: right;
+  margin: 0px;
 
-  #time-out{
+  background-color: transparent;
+  color: red;
+  padding: 40px;
+  font-size: 30px;
+}
 
+.time-out {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0px;
 
-  }
+  background-color: transparent;
+  color: yellow;
+  padding-top: 0px;
+  padding-right: 40px;
+  font-size: 40px;
+  margin-top: px;
 
-  .punto-de-mira{
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    background-color: transparent;
-    overflow: hidden; 
-    position: relative; 
-    user-select: none;
-    height: 70px;
-  }
+}
 
+.botones-inicio {
+  display: flex;
+  flex-direction: column;
+  padding-left: center;
 
-  .score {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0px;
+}
 
-    background-color: transparent;
-    color: red;
-    padding: 40px;
-    font-size: 30px;
-  }
+.desarrollo {
+  margin-top: 100px;
+  color: orange;  
+  font-size: 20px;
+  position: relative;
+  font-family: 'VT323', monospace;
+}
 
-  .time-out {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0px;
+.instrucciones {
 
-    background-color: transparent;
-    color: yellow;
-    padding-top: 0px;
-    padding-right: 40px;
-    font-size: 40px;
-    margin-top: px;
-  }
+  background-color: #FCF2E0;
+  border-radius: 20px;
+  text-shadow: #FC0 1px 0 10px;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px;
+  color: blue;
+}
+
+aside {
+  color: red;
+  font-size: 30px;
+  text-shadow: #FC0 1px 0 10px;
+  font-family: 'VT323', monospace;
+}
