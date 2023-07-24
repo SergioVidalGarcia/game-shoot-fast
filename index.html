@@ -41,10 +41,13 @@
   <div id="game-screen" class="container2">
 
     <div id="game-box">
-      <div class="score">Score</div>
+      <div id="target"><img class="avion" src="images/avion.png" alt="target"></div>
+      <div id = "suma-score" class="score">Score</div>
       <div id="timer" class="time-out"><p>!Preparate¡</p></div>
       <div id= "mira" class="punto-de-mira"><img src="./images/punto-mira.png" alt="Punto de mira"></div>
+      
     </div>
+    
     </div>
     
 
@@ -52,23 +55,40 @@
 
     <!-- ---------------------PANTALLA DE fin/reset------------------ -->
     <div id="end-screen" class="container">
-    <h1><p>ESTA ES LA PANTALLA DE FIN DE JUEGO</p></h1>
+    <h1><p>EN ESTE PARRAFO SE MOSTRARA EL SCORE: Y TE DIRA 3 RESULTADOS EN FUNCION DEL SCORE QUE HAYAS CONSEGUIDO</p></h1>
+    <div><img class="imagen-resultado" src="images/n1.png" alt="imagen de victoria N1"></div>
 
 
-
-    
-
-
-    
-
+    <div class="container3">
+      <button id="inicio-btn" class="inicio-btn">Volver a la pantalla de inicio</button>
+      <button id="reset-btn" class="reset-btn">¡Volver a jugar!</button>
+    </div>
+    <div>
+      <p class="desarrollo">&reg WEB-DEV: Sergio Vidal Garcia</p>
+    </div>
   </div>
+
+
+    <!-- -----------------------pantalla config---------------- -->
+
+
+
+
+</div>
+
+
+
+    
+
+  
     <!-- ---------------------SCRIPTS------------------ -->
+    
     <script src="./js/main.js"></script>
     <script src="./js/contador.js"></script>
-    <script src="./js/objetivos.js"></script>
     <script src="./js/punto-mira.js"></script>
     <script src="./js/score.js"></script>
     <script src="./js/game.js"></script>
+    <script src="./js/targets.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 function countdown() {
     const scoreElement = document.getElementById('timer');
-    let seconds = 1; // Inicializamos el contador en 60 segundos
+    let seconds = 5; // Inicializamos el contador en 60 segundos
     // Función para actualizar el texto en el elemento "score"
     function updateScore() {
         scoreElement.textContent = `Tiempo restante: ${Math.floor(seconds / 60)}:${(seconds % 60).toString().padStart(2, '0')}`;
